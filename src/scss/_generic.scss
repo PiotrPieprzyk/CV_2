@@ -1,0 +1,38 @@
+@use 'variables' as *;
+
+button {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a, ul {
+  margin: 0;
+  font-weight: 500;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  text-decoration: inherit;
+}
+
+li {
+  font-size: inherit;
+}
+
+ul {
+  ::marker{
+    color:  map-get($map: $colors, $key: "primary");
+    font-size: 24px;
+  }
+}

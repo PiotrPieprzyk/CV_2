@@ -1,0 +1,86 @@
+@use 'variables' as *;
+
+@mixin fs($break-point-name, $break-point, $typography-sizes) {
+  @each $name, $value in $typography-sizes {
+    @if $break-point {
+      @media (min-width: #{$break-point}) {
+        .text-#{$break-point-name}-#{$name} {
+          font-size: #{$value};
+        }
+      }
+    } @else {
+      .text-#{$name} {
+        font-size: #{$value};
+      }
+    }
+  }
+}
+
+@mixin fcolor($break-point-name, $break-point, $typography-color) {
+  @each $name, $value in $typography-color {
+    @if $break-point {
+      @media (min-width: #{$break-point}) {
+        .text-#{$break-point-name}-#{$name} {
+          color: #{$value};
+        }
+      }
+    } @else {
+      .text-#{$name} {
+        color: #{$value};
+      }
+    }
+  }
+}
+
+@include fs("xs", $xs, $typography);
+@include fs("sm", $sm, $typography);
+@include fs("md", $md, $typography);
+@include fs("lg", $lg, $typography);
+@include fs("xl", $xl, $typography);
+
+@include fcolor("xs", $xs, $colors);
+@include fcolor("sm", $sm, $colors);
+@include fcolor("md", $md, $colors);
+@include fcolor("lg", $lg, $colors);
+@include fcolor("xl", $xl, $colors);
+
+h1 {
+  font-size: map-get($typography, "h1");
+  line-height: 115%;
+}
+h2 {
+  font-size: map-get($typography, "h2");
+}
+h3 {
+  font-size: map-get($typography, "h3");
+}
+h4 {
+  font-size: map-get($typography, "h4");
+}
+p {
+  font-size: map-get($typography, "p");
+  a {
+    color: map-get($map: $colors, $key: "primary");
+    font-weight: 700;
+    text-decoration: underline;
+  }
+}
+
+primary {
+  color: map-get($map: $colors, $key: "primary");
+  font-weight: 700;
+}
+
+body {
+  font-weight: 500;
+}
+
+.bold,
+bold {
+  font-weight: 700;
+}
+
+.light,
+light {
+  font-weight: 300;
+}

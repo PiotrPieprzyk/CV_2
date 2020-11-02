@@ -1,0 +1,189 @@
+@use 'variables' as *;
+
+@mixin display($break-point-name, $break-point, $display-options...) {
+  @each $option in $display-options {
+    @if $break-point {
+      @media (min-width: #{$break-point}) {
+        .d-#{$break-point-name}-#{$option} {
+          display: #{$option} !important;
+        }
+      }
+    } @else {
+      .d-#{$option} {
+        display: #{$option} !important;
+      }
+    }
+  }
+}
+
+@mixin grid_template_col(
+  $break-point-name,
+  $break-point,
+  $grid-template-options...
+) {
+  @each $option in $grid-template-options {
+    @if $break-point {
+      @media (min-width: #{$break-point}) {
+        .grid-col-#{$break-point-name}-#{$option} {
+          grid-template-columns: repeat(#{$option}, 1fr);
+        }
+      }
+    } @else {
+      .grid-col-#{$option} {
+        grid-template-columns: repeat(#{$option}, 1fr);
+      }
+    }
+  }
+}
+
+@mixin grid_template_row(
+  $break-point-name,
+  $break-point,
+  $grid-template-options...
+) {
+  @each $option in $grid-template-options {
+    @if $break-point {
+      @media (min-width: #{$break-point}) {
+        .grid-row-#{$break-point-name}-#{$option} {
+          grid-template-rows: repeat(#{$option}, 1fr);
+        }
+      }
+    } @else {
+      .grid-row-#{$option} {
+        grid-template-rows: repeat(#{$option}, 1fr);
+      }
+    }
+  }
+}
+
+@mixin col($break-point-name, $break-point, $grid-template-options...) {
+  @each $option in $grid-template-options {
+    @if $break-point {
+      @media (min-width: #{$break-point}) {
+        .col-#{$break-point-name}-#{$option} {
+          grid-column: span #{$option};
+        }
+      }
+    } @else {
+      .col-#{$option} {
+        grid-column: span #{$option};
+      }
+    }
+  }
+}
+
+@mixin row($break-point-name, $break-point, $grid-template-options...) {
+  @each $option in $grid-template-options {
+    @if $break-point {
+      @media (min-width: #{$break-point}) {
+        .row-#{$break-point-name}-#{$option} {
+          grid-row: span #{$option};
+        }
+      }
+    } @else {
+      .row-#{$option} {
+        grid-row: span #{$option};
+      }
+    }
+  }
+}
+
+@mixin m($break-point-name, $break-point, $margines-options) {
+  @each $name, $value in $margines-options {
+    @if $break-point {
+      @media (min-width: #{$break-point}) {
+        .ma-#{$break-point-name}-#{$name} {
+          margin: #{$value};
+        }
+        .mt-#{$break-point-name}-#{$name} {
+          margin-top: #{$value};
+        }
+        .mr-#{$break-point-name}-#{$name} {
+          margin-right: #{$value};
+        }
+        .mb-#{$break-point-name}-#{$name} {
+          margin-bottom: #{$value};
+        }
+        .ml-#{$break-point-name}-#{$name} {
+          margin-left: #{$value};
+        }
+        .mx-#{$break-point-name}-#{$name} {
+          margin-left: #{$value};
+          margin-right: #{$value};
+        }
+        .my-#{$break-point-name}-#{$name} {
+          margin-top: #{$value};
+          margin-bottom: #{$value};
+        }
+      }
+    } @else {
+      .ma-#{$name} {
+        margin: #{$value};
+      }
+      .mt-#{$name} {
+        margin-top: #{$value};
+      }
+      .mr-#{$name} {
+        margin-right: #{$value};
+      }
+      .mb-#{$name} {
+        margin-bottom: #{$value};
+      }
+      .ml-#{$name} {
+        margin-left: #{$value};
+      }
+      .mx-#{$name} {
+        margin-left: #{$value};
+        margin-right: #{$value};
+      }
+      .my-#{$name} {
+        margin-top: #{$value};
+        margin-bottom: #{$value};
+      }
+    }
+  }
+}
+
+$display-option: "block", "none", "flex", "grid";
+
+@include display("xs", $xs, $display-option...);
+@include display("sm", $sm, $display-option...);
+@include display("md", $md, $display-option...);
+@include display("lg", $lg, $display-option...);
+@include display("xl", $xl, $display-option...);
+
+
+$grid-template-options: "1","2","3","4","5","6","7","8","9","10","11","12";
+
+
+@include grid_template_col("xs", $xs, $grid-template-options...);
+@include grid_template_col("sm", $sm, $grid-template-options...);
+@include grid_template_col("md", $md, $grid-template-options...);
+@include grid_template_col("lg", $lg, $grid-template-options...);
+@include grid_template_col("xl", $xl, $grid-template-options...);
+
+
+@include grid_template_row("xs", $xs, $grid-template-options...);
+@include grid_template_row("sm", $sm, $grid-template-options...);
+@include grid_template_row("md", $md, $grid-template-options...);
+@include grid_template_row("lg", $lg, $grid-template-options...);
+@include grid_template_row("xl", $xl, $grid-template-options...);
+
+@include col("xs", $xs, $grid-template-options...);
+@include col("sm", $sm, $grid-template-options...);
+@include col("md", $md, $grid-template-options...);
+@include col("lg", $lg, $grid-template-options...);
+@include col("xl", $xl, $grid-template-options...);
+
+@include row("xs", $xs, $grid-template-options...);
+@include row("sm", $sm, $grid-template-options...);
+@include row("md", $md, $grid-template-options...);
+@include row("lg", $lg, $grid-template-options...);
+@include row("xl", $xl, $grid-template-options...);
+
+
+@include m("xs", $xs, $margines);
+@include m("sm", $sm, $margines);
+@include m("md", $md, $margines);
+@include m("lg", $lg, $margines);
+@include m("xl", $xl, $margines);

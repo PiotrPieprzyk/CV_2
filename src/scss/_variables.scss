@@ -1,0 +1,39 @@
+// BreakPoint
+
+$xs: false !default;
+$sm: "567px" !default;
+$md: "976px" !default;
+$lg: "1400px" !default;
+$xl: "1900px" !default;
+
+// Typegraphy
+
+$typography: (
+  "h1": 64px,
+  "h2": 48px,
+  "h3": 36px,
+  "h4": 24px,
+  "p": 18px
+);
+
+// Theme white
+
+$colors: (
+  "primary":  #eb5656,
+  "grey":  #f1f1f1,
+  "white": #fcfcfc,
+  "black": rgba(0, 0, 0, 0.83),
+);
+
+// Margines
+
+$margines: (
+  "1": 4px,
+  "2": 8px,
+  "3": 12px,
+  "4": 16px,
+  "5": 24px,
+  "6": 36px,
+  "7": 48px,
+  "8": 60px,
+);
