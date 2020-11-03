@@ -27,7 +27,7 @@ export default {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	gap: 60px;
+	gap: 48px;
 	align-items: center;
 }
 
@@ -47,6 +47,11 @@ export default {
 	margin-left: auto;
 }
 
+@media (min-width: $sm) {
+	.project-holder {
+		gap: 60px;
+	}
+}
 @media (min-width: $md) {
 	.text-md-left {
 		text-align: left;

@@ -24,17 +24,30 @@ export default {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	gap: 48px;
+	gap: 60px;
 	.holder {
 		flex: 1;
 		max-width: 450px;
 		display: flex;
 		align-items: flex-start;
 		flex-direction: column;
-		gap: 36px;
+		gap: 26px;
 		img {
 			width: 100%;
 			height: auto;
+		}
+	}
+}
+@media (min-width: $sm) {
+	.project-content .holder {
+		gap: 36px;
+	}
+}
+@media (min-width: $md) {
+	.project-content {
+		max-width: 1100px;
+		.holder {
+			gap: 36px;
 		}
 	}
 }
