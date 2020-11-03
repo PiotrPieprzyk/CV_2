@@ -30,9 +30,4 @@ li {
   font-size: inherit;
 }
 
-ul {
-  ::marker{
-    color:  map-get($map: $colors, $key: "primary");
-    font-size: 24px;
-  }
-}
+
