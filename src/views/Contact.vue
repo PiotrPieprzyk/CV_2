@@ -14,6 +14,7 @@
 				<img src="@/assets/contact/stackoverflow.svg" alt="" />
 			</div>
 			<img
+				ref="plane"
 				class="paper-plane d-none d-md-block"
 				src="@/assets/contact/paper_plane.svg"
 				alt=""
@@ -21,6 +22,32 @@
 		</div>
 	</div>
 </template>
+
+<script>
+import gsap from "gsap";
+
+const animation = gsap.timeline();
+
+export default {
+	data() {
+		return {
+			plane: null
+		};
+	},
+	mounted() {
+		this.plane = this.$refs.plane;
+		animation.from(this.plane, {
+			duration: 2,
+			x: 200,
+			y: 50,
+			opacity: 0,
+			ease: "back"
+		});
+
+		animation.play();
+	}
+};
+</script>
 
 <style lang="scss" scoped>
 @use '../scss/variables' as *;
@@ -55,25 +82,22 @@
 		}
 		@keyframes flyingPlane {
 			0% {
-				top: 45%;
-			}
-			25% {
-				top: 40%;
-			}
-			75% {
 				top: 50%;
 			}
-			100% {
-				top: 45%;
+			20% {
+				top: 40%;
+			}
+			40% {
+				top: 50%;
 			}
 		}
 		.paper-plane {
 			position: absolute;
 			right: 15%;
-			top: 45%;
+			top: 50%;
 			width: 150px;
-			transition: ease-in-out;
-			animation: 5s flyingPlane infinite;
+			transition: none;
+			animation: 6s flyingPlane infinite;
 		}
 	}
 }
