@@ -21,7 +21,9 @@
 				<router-link to="/">Piotr Pieprzyk</router-link>
 			</div>
 		</header>
-		<router-view />
+		<transition name="fade" mode="out-in">
+			<router-view />
+		</transition>
 	</div>
 </template>
 
@@ -113,5 +115,17 @@ header {
 			}
 		}
 	}
+}
+
+//  ANIMATION ROUTING
+
+.fade-enter-active,
+.fade-leave-active {
+	transition: all 1s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+	opacity: 0;
 }
 </style>
