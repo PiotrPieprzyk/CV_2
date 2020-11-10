@@ -77,7 +77,7 @@ export default {
 	.card {
 		.img-holder {
 			width: 100%;
-			height: 400px;
+			height: 350px;
 			position: relative;
 			.quato-holder {
 				position: absolute;
