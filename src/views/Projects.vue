@@ -1,7 +1,7 @@
 <template>
 	<div class="projects">
 		<h1 class="bold">Projects</h1>
-		<h4>/ Frontend developer</h4>
+		<h4 class="mt-2">/ Frontend developer</h4>
 		<div class="projects-wrapper d-grid grid-col-4 grid-row-md-2">
 			<router-link
 				to="/dev/longdevs"
@@ -82,11 +82,12 @@ export default {
 	max-width: 410px;
 	display: flex;
 	flex-direction: column;
-	gap: 40px;
 	.projects-wrapper {
 		width: 100%;
 		grid-gap: 36px;
+		gap: 36px;
 		grid-template-rows: 200px 200px;
+		margin: 60px 0;
 		.project-link-holder {
 			width: 100%;
 			height: 100%;

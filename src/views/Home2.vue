@@ -109,13 +109,15 @@ export default {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: 12px;
 		right: 0;
 		left: 0;
 		margin-right: auto;
 		margin-left: auto;
 		p {
 			text-align: center;
+		}
+		> * {
+			margin-bottom: 12px;
 		}
 	}
 }
@@ -129,8 +131,10 @@ export default {
 			padding: 36px;
 			.skills-wrapper {
 				width: 100%;
-				gap: 40px;
 				justify-content: start;
+				> * {
+					margin-right: 40px;
+				}
 			}
 		}
 		.img-holder__desktop {

@@ -83,7 +83,6 @@ header {
 
 .links-wrapper {
 	display: flex;
-	gap: 48px;
 }
 
 @media (min-width: $md) {
@@ -98,6 +97,7 @@ header {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		margin-left: 36px;
 
 		a {
 			z-index: 1;

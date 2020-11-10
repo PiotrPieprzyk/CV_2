@@ -58,11 +58,15 @@ export default {
 	.card {
 		display: flex;
 		flex-direction: column;
-		gap: 24px;
 		height: fit-content;
 		.links-holder {
 			display: flex;
-			gap: 24px;
+			> * {
+				margin-right: 24px;
+			}
+		}
+		> * {
+			margin-bottom: 24px;
 		}
 	}
 }
@@ -82,19 +86,19 @@ export default {
 		}
 		@keyframes flyingPlane {
 			0% {
-				top: 50%;
+				top: 45%;
 			}
 			20% {
-				top: 40%;
+				top: 35%;
 			}
 			40% {
-				top: 50%;
+				top: 45%;
 			}
 		}
 		.paper-plane {
 			position: absolute;
 			right: 15%;
-			top: 50%;
+			top: 45%;
 			width: 150px;
 			transition: none;
 			animation: 6s flyingPlane infinite;
