@@ -24,17 +24,17 @@
 			<template v-slot:left>
 				<h4 class="bold">How did it start?</h4>
 				<p>
-					The following months of intensive study proved to be more and more
-					that to create a good website you need people. It is not about
+					The following months of intensive study proved me that to create a
+					good website <primary> I need people</primary>. It is not about
 					specialization problems, but quite the opposite. The problem is to
 					master all the areas related to web development.
 				</p>
 
 				<p>
-					Ideas for creating projects that required knowledge of Front-end,
-					Back-end, Dev-ops, Graphic Design, UX Design, SEO have begun to appear
-					in my head. Each of the roles has the foundation of a good website.
-					That's why I created Longdevs.
+					The ideas that began to emerge required more specialists. Front-end,
+					Back-end, Dev-ops, Graphic Designer, UX Designer, SEO. Each of the
+					roles has the foundation of a good website. That's why I created
+					Longdevs.
 				</p>
 			</template>
 		</content-holder>
@@ -42,18 +42,18 @@
 			<template v-slot:left>
 				<h4 class="bold">First internship</h4>
 				<p>
-					I already have a year and a half of experience as a front-end
-					developer. I have already gathered enough knowledge to introduce new
-					students to the world of programming. New interns joined our company.
-					I asked my boss if I could take care of their education. He agreed so
-					I couldn't miss this opportunity.
+					I already have a <primary>year and a half of experience</primary> as a
+					Front-end developer. I have already gathered enough knowledge to
+					introduce new students to the world of programming. New interns joined
+					our company. I asked my boss if I could take care of their education.
+					He agreed so I couldn't miss this opportunity.
 				</p>
 				<p>
 					I started by creating a list of things to learn. They have the form of
 					a check box list. It was supposed to find out from what level we start
 					and then control the progress.
 				</p>
-				<p>Link to <a>list</a>.</p>
+				<p>Link to <a>learning shedule</a>.</p>
 				<p>
 					You can check a comparison of interns' knowledge before and after two
 					months at the end of this article.
@@ -125,25 +125,25 @@
 				<p>
 					I am pleased with the beginning of this project. Of course, this is
 					not the end. There is a plan to implement new people with already
-					gathered knowledge. Who knows what will come of it?
+					gathered knowledge. Who knows what will come?
 				</p>
 			</template>
 		</content-holder>
+
 		<content-holder>
 			<template v-slot:left>
-				<h4 class="bold">Links list</h4>
-				<ul>
-					<li>Link to <a>longdevs.com</a></li>
-					<li>Link to <a>list</a>.</li>
-					<li>
-						Link to the presentation
-						<a
-							>"Start with a simple code then add libraries - why VueX is not
-							always a solution."</a
-						>
-					</li>
-					<li>Link to graphic project <a>PageGenerator</a>.</li>
-				</ul>
+				<p>
+					Thank you for reading
+				</p>
+				<p>
+					If you are interested to hire me I invite you to check mine About me
+					page where you can check my actual full list of skills, and download
+					my CV.
+				</p>
+				<p>
+					<a href="/gemini">About page</a><br />
+					<a href="/gemini">CV</a>
+				</p>
 			</template>
 		</content-holder>
 	</project-holder>
