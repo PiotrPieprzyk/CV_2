@@ -44,20 +44,20 @@
 @include fcolor("lg", $lg, $colors);
 @include fcolor("xl", $xl, $colors);
 
-h1 {
+h1, .h1 {
 	font-size: calc(#{map-get($typography, "h1")} * 0.8);
 	line-height: 115%;
 }
-h2 {
+h2, .h2 {
 	font-size: calc(#{map-get($typography, "h2")} * 0.9);
 }
-h3 {
+h3, .h3 {
 	font-size: calc(#{map-get($typography, "h3")} * 0.8);
 }
-h4 {
+h4, .h4 {
 	font-size: calc(#{map-get($typography, "h4")} * 0.9);
 }
-p,
+p,.p,
 li {
 	font-size: calc(#{map-get($typography, "p")} * 0.9);
 	a {
@@ -75,20 +75,19 @@ ul {
 }
 
 @media (min-width: $sm) {
-	h1 {
+	h1, .h1 {
 		font-size: #{map-get($typography, "h1")};
-		line-height: 115%;
 	}
-	h2 {
+	h2, .h2 {
 		font-size: map-get($typography, "h2");
 	}
-	h3 {
+	h3, .h3 {
 		font-size: map-get($typography, "h3");
 	}
-	h4 {
+	h4, .h4 {
 		font-size: map-get($typography, "h4");
 	}
-	p,
+	p, .p1,
 	li,ul > ::marker {
 		font-size: map-get($typography, "p");
   }
