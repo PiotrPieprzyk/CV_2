@@ -68,6 +68,7 @@ li {
 }
 
 ul {
+	padding-inline-start: 36px;
   ::marker{
     color:  map-get($map: $colors, $key: "primary");
     font-size: calc(#{map-get($typography, "p")} * 0.9);
