@@ -5,10 +5,9 @@
 				<template v-slot:left>
 					<h1 class="bold">LongDevs</h1>
 					<h4>
-						was my first
-						<primary>no commerce and social</primary> project that I created to
-						developed new programmers. The project has encouraged to cooperate
-						and exchange of experience.
+						Longdevs was my first <primary>no commercial project</primary> that
+						I created to train new computer programmers. The project was meant
+						to encourage cooperation and exchange of experience.
 					</h4>
 					<h4 class="bold">Main challenges:</h4>
 					<ul>
@@ -27,18 +26,13 @@
 				<template v-slot:left>
 					<h4 class="bold">How did it start?</h4>
 					<p>
-						The following months of intensive study proved me that to create a
-						good website <primary> I need people</primary>. It is not about
-						specialization problems, but quite the opposite. The problem is to
-						master all the areas related to web development.
+						The following months, of intensive study, proved to me that
+						<primary>teamwork is essential</primary> in creating good websites.
+						Working with others makes it possible to master all the areas
+						related to web development, such as Front-end, Back-end, Dev-ops,
+						Graphic Designer, UX Designer, SEO.
 					</p>
-
-					<p>
-						The ideas that began to emerge required more specialists. Front-end,
-						Back-end, Dev-ops, Graphic Designer, UX Designer, SEO. Each of the
-						roles has the foundation of a good website. That's why I created
-						Longdevs.
-					</p>
+					<p>That's why I created Longdevs!</p>
 				</template>
 			</content-holder>
 			<content-holder>
@@ -46,15 +40,15 @@
 					<h4 class="bold">First internship</h4>
 					<p>
 						I already have a <primary>year and a half of experience</primary> as
-						a Front-end developer. I have already gathered enough knowledge to
-						introduce new students to the world of programming. New interns
-						joined our company. I asked my boss if I could take care of their
-						education. He agreed so I couldn't miss this opportunity.
+						a front-end developer. Knowledge gathered during that time enables
+						me to introduce new interns to the world of programming. I asked my
+						boss if I could take care of their education. He agreed so I
+						couldn't miss this opportunity.
 					</p>
 					<p>
-						I started by creating a list of things to learn. They have the form
-						of a check box list. It was supposed to find out from what level we
-						start and then control the progress.
+						I started by establishing a catalog of practical skills, in a form
+						of a check box list. This allowed me to find out the current level
+						of knowledge and then control the progress.
 					</p>
 					<p>Link to <a>learning shedule</a>.</p>
 					<p>
@@ -67,9 +61,8 @@
 				<template v-slot:left>
 					<h4 class="bold">Study of internship</h4>
 					<p>
-						Every day, I had the opportunity to devote one hour to an intern. At
-						the end of the lessons, I asked them what would you like to learn
-						tomorrow.
+						Every day I spend one hour working with interns. At the end of each
+						lesson, I was asking them what would they like to learn tomorrow.
 					</p>
 					<p>Sample topics:</p>
 					<ul>
@@ -77,8 +70,8 @@
 						<li>How to reduce code by functions?</li>
 						<li>Asynchronical code - what is a Promise?</li>
 						<li>
-							How to do your work schedule? How could help us tools like a to-do
-							list or xMind?
+							How to prepare your work schedule? Why tools like to-do list or
+							xMind are helpful?
 						</li>
 						<li>Array methods and ESNext</li>
 						<li>
@@ -95,30 +88,13 @@
 					</p>
 				</template>
 			</content-holder>
-			<content-holder>
-				<template v-slot:left>
-					<h4 class="bold">Defects</h4>
-					<p>
-						There were also failures. Halfway through the education of the
-						trainees, they did well. At such a moment, I overdid on the next
-						task. PageGenerator. The assumption was theoretically simple, but
-						the execution was too complex. Interns had a hard to figure out how
-						to organize out all the code.
-					</p>
-					<p>Link to graphic project <a>PageGenerator</a>.</p>
-					<p>However, the two things we had learned. It is worth to:</p>
-					<ul>
-						<li>learning from small projects and</li>
-						<li>leaving at the right moment</li>
-					</ul>
-				</template>
-			</content-holder>
+
 			<content-holder>
 				<template v-slot:left>
 					<h4 class="bold">Effects</h4>
 					<p>
 						The internship was over. Then it was time to evaluate. The trainees
-						have a few pleasant words.
+						leave me with a few pleasent words
 					</p>
 				</template>
 			</content-holder>

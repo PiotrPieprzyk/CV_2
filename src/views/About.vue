@@ -5,11 +5,12 @@
 				<h1 class="bold mb-2">
 					About
 				</h1>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus
-					mollis augue, a lacinia turpis rutrum vel. Proin varius bibendum
-					sodales. Integer eu est leo. Suspendisse vel ex eleifend, egestas orci
-					vitae, ornare lorem.
+				<p class="mr-md-8">
+					Programing became my passion since the winter of 2019. Now I'm working
+					as a Front-end developer. <br />I enjoy working with people and for
+					people. I'm open to new projects and challenges, constantly ready to
+					learn new things. Fanatic of writing reusable, easy to maintain, and
+					clean code.
 				</p>
 			</div>
 			<div class="col-4 col-md-2">
@@ -22,7 +23,7 @@
 				</a>
 			</div>
 		</div>
-		<h4 class="bold my-6">
+		<h4 class="bold mb-6 mt-8">
 			Full list of skills
 		</h4>
 		<div class=" d-grid grid-col-4">
@@ -107,7 +108,6 @@
 					</ul>
 				</div>
 				<ul>
-					<li>English: Good</li>
 					<li>Experience with Jira and Agile workflow</li>
 					<li>Knowledge about SEO</li>
 				</ul>

@@ -19,6 +19,11 @@
 			:class="{ 'fade-active': isFloatingInfoVisibile }"
 		>
 			<slot name="headerContent"></slot>
+			<transition name="fade">
+				<div class="scroll-me" v-if="!isFloatingInfoVisibile">
+					Scroll me
+				</div>
+			</transition>
 		</div>
 		<div
 			ref="mainContent"
@@ -51,65 +56,102 @@ export default {
 				h: null
 			},
 			currentTitle: "components",
-			currentProcent: null
+			currentProcent: null,
+			windowWidth: window.innerWidth
 		};
 	},
 	mounted() {
-		const titlesElements = Array.from(
-			this.$refs.mainContent.querySelectorAll("h4")
-		);
-
 		window.addEventListener("scroll", () => {
-			const mainContentElement = this.$refs.mainContent;
-			if (mainContentElement) {
-				const mainContentProperties = {
-					y:
-						-mainContentElement.getBoundingClientRect().y +
-						window.innerHeight / 2,
-					h: mainContentElement.getBoundingClientRect().height,
-					offsetTop: mainContentElement.offsetTop
-				};
+			const mainContentProperties = this.getMainContnentProperties();
+			const titleElementFromMainContent = this.getTitleElementFromMainContent();
 
-				const currentProcent =
-					mainContentProperties.y / mainContentProperties.h;
+			if (mainContentProperties && titleElementFromMainContent) {
+				const percentageOfMainContentRead = this.getPercentageOfMainContentRead(
+					mainContentProperties
+				);
+				const titlesProperties = this.getTitlesProperties(
+					titleElementFromMainContent,
+					mainContentProperties
+				);
+				const currentTitle = this.getCurrentTitle(
+					titlesProperties,
+					percentageOfMainContentRead
+				);
 
-				const titlesTexts = titlesElements.map(el => {
-					return new Object({
-						title: el.innerHTML,
-						procentHeight:
-							(el.offsetTop - mainContentProperties.offsetTop) /
-							mainContentProperties.h
-					});
-				});
-
-				const getCurrentElement = () => {
-					const lenght = titlesTexts.length - 1;
-					let i = lenght;
-					while (i >= 0) {
-						if (titlesTexts[i].procentHeight < currentProcent) {
-							return titlesTexts[i];
-						}
-						i--;
-					}
-				};
-				const currentElement = getCurrentElement();
-
-				this.currentTitle = currentElement ? currentElement.title : "";
-
-				this.currentProcent = currentProcent;
+				this.currentTitle = currentTitle ? currentTitle.title : "";
+				this.currentProcent = percentageOfMainContentRead;
 
 				const imgHolder = this.$refs.imgHolderInner;
 				if (imgHolder) {
-					imgHolder.style.width = `${currentProcent * 100}%`;
+					imgHolder.style.width = `${percentageOfMainContentRead * 100}%`;
 				}
-
-				console.log(currentProcent);
 			}
 		});
 	},
 	computed: {
 		isFloatingInfoVisibile() {
 			return this.currentProcent > 0 && this.currentProcent < 1;
+		},
+		isMobile() {
+			return window.outerWidth > 1100;
+		}
+	},
+	methods: {
+		onResize() {
+			this.windowWidth = window.innerWidth;
+		},
+		getMainContnentProperties() {
+			const refToMainContentElementHtml = this.$refs.mainContent;
+			if (refToMainContentElementHtml) {
+				const mainContentProperties = {
+					// offset from top edge main content wrapper from middle of window height
+					offsetFromMiddle:
+						-refToMainContentElementHtml.getBoundingClientRect().y +
+						window.innerHeight / 2,
+					height: refToMainContentElementHtml.getBoundingClientRect().height,
+					offsetTopEdgeOf: refToMainContentElementHtml.offsetTop
+				};
+				return mainContentProperties;
+			} else {
+				new Error("Something gone wrong with getMainContnentProperties");
+			}
+		},
+		getPercentageOfMainContentRead(mainContentProperties) {
+			const percentage =
+				mainContentProperties.offsetFromMiddle / mainContentProperties.height;
+			if (percentage) {
+				return percentage;
+			} else {
+				new Error("Something gone wrong with getPercentageOfMainContentRead");
+			}
+		},
+		getTitleElementFromMainContent() {
+			const titlesElements = Array.from(
+				this.$refs.mainContent.querySelectorAll("h4")
+			);
+			if (titlesElements && titlesElements.length > 0) {
+				return titlesElements;
+			} else {
+				new Error("Something gone wrong with getH4Element");
+			}
+		},
+		getTitlesProperties(titlesElements, mainContentProperties) {
+			return titlesElements.map(el => {
+				return new Object({
+					title: el.innerHTML,
+					procentHeight: el.offsetTop / mainContentProperties.height
+				});
+			});
+		},
+		getCurrentTitle(titlesElements, percentageOfMainContentRead) {
+			const lenght = titlesElements.length - 1;
+			let i = lenght;
+			while (i >= 0) {
+				if (titlesElements[i].procentHeight < percentageOfMainContentRead) {
+					return titlesElements[i];
+				}
+				i--;
+			}
 		}
 	}
 };
@@ -131,7 +173,19 @@ export default {
 	.main-content,
 	.footer-content,
 	.header-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 		width: 100%;
+		min-height: calc(100vh - 155px);
+		position: relative;
+	}
+	.header-content {
+		align-items: center;
+		.scroll-me {
+			position: absolute;
+			bottom: 30px;
+		}
 	}
 }
 
@@ -193,7 +247,7 @@ export default {
 .floating-info {
 	position: fixed;
 	top: 40%;
-	right: 19%;
+	left: calc(50% + 100px);
 	display: flex;
 	width: 400px;
 	height: 60px;
