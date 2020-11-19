@@ -26,9 +26,12 @@
 					<img src="@/assets/projects/images/dazai.png" alt="" />
 				</div>
 			</div>
-			<div class="project-link-holder col-4 col-md-1">
-				<h4 class="bold">LAB</h4>
-			</div>
+			<router-link
+				to="/design/learningplan"
+				class="project-link-holder col-4 col-md-1"
+			>
+				<h4>Learning Plan</h4>
+			</router-link>
 		</div>
 		<h4>/ Web desinger</h4>
 		<div class="projects-wrapper d-grid grid-col-4 grid-row-md-2">
@@ -39,28 +42,16 @@
 			</div>
 			<router-link
 				to="/design/longdevs"
-				class="project-link-holder col-4 col-md-1"
+				class="project-link-holder col-4 col-md-1 row-md-2"
 			>
 				<h4>LONGDEVS</h4>
-			</router-link>
-			<router-link
-				to="/design/pagegenerator"
-				class="project-link-holder col-4 col-md-1"
-			>
-				<h4>Page Generator</h4>
 			</router-link>
 
 			<router-link
 				to="/design/inteligentlearning"
-				class="project-link-holder col-4 col-md-1"
+				class="project-link-holder col-4 col-md-1 row-md-2"
 			>
 				<h4>Inteligent<br />Learning</h4>
-			</router-link>
-			<router-link
-				to="/design/learningplan"
-				class="project-link-holder col-4 col-md-1"
-			>
-				<h4>Learning Plan</h4>
 			</router-link>
 		</div>
 	</div>

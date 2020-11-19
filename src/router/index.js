@@ -39,14 +39,6 @@ const projects = [
 			import(
 				/* webpackChunkName: "about" */ "../views/projects/design/InteligentLearning.vue"
 			)
-	},
-	{
-		path: "/design/pagegenerator",
-		name: "PageGenerator",
-		component: () =>
-			import(
-				/* webpackChunkName: "about" */ "../views/projects/design/PageGenerator.vue"
-			)
 	}
 ];
 

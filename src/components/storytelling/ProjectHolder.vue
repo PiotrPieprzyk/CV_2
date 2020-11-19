@@ -1,7 +1,7 @@
 <template>
 	<div class="project-holder" :class="{ fluid: fluid }">
 		<transition name="fade">
-			<div v-if="isFloatingInfoVisibile" class="floating-info">
+			<div v-if="isMobile && isFloatingInfoVisibile" class="floating-info">
 				<div class="img-holder-outer">
 					<div ref="imgHolderInner" class="img-holder-inner">
 						<img :src="Circle" alt="" />
@@ -20,14 +20,14 @@
 		>
 			<slot name="headerContent"></slot>
 			<transition name="fade">
-				<div class="scroll-me" v-if="!isFloatingInfoVisibile">
+				<div class="scroll-me" v-if="!isFloatingInfoVisibile && isMobile">
 					Scroll me
 				</div>
 			</transition>
 		</div>
 		<div
 			ref="mainContent"
-			class="main-content fade"
+			class="main-content fade mt-6"
 			:class="{ 'fade-active': !isFloatingInfoVisibile }"
 		>
 			<slot name="mainContent"></slot>
@@ -57,11 +57,30 @@ export default {
 			},
 			currentTitle: "components",
 			currentProcent: null,
-			windowWidth: window.innerWidth
+			windowWidth: window.innerWidth,
+			isMobile: false
 		};
 	},
 	mounted() {
-		window.addEventListener("scroll", () => {
+		this.runFloatingReadingProgress();
+		this.onResize();
+		window.addEventListener("scroll", this.runFloatingReadingProgress);
+		window.addEventListener("resize", this.onResize);
+	},
+	unmounted() {
+		window.removeEventListener("scroll", this.runFloatingReadingProgress);
+		window.removeEventListener("resize", this.onResize);
+	},
+	computed: {
+		isFloatingInfoVisibile() {
+			return this.currentProcent > 0 && this.currentProcent < 1;
+		}
+	},
+	methods: {
+		onResize() {
+			this.isMobile = window.innerWidth > 1100;
+		},
+		runFloatingReadingProgress() {
 			const mainContentProperties = this.getMainContnentProperties();
 			const titleElementFromMainContent = this.getTitleElementFromMainContent();
 
@@ -86,19 +105,6 @@ export default {
 					imgHolder.style.width = `${percentageOfMainContentRead * 100}%`;
 				}
 			}
-		});
-	},
-	computed: {
-		isFloatingInfoVisibile() {
-			return this.currentProcent > 0 && this.currentProcent < 1;
-		},
-		isMobile() {
-			return window.outerWidth > 1100;
-		}
-	},
-	methods: {
-		onResize() {
-			this.windowWidth = window.innerWidth;
 		},
 		getMainContnentProperties() {
 			const refToMainContentElementHtml = this.$refs.mainContent;
