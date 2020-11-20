@@ -51,7 +51,11 @@
 						of a check box list. This allowed me to find out the current level
 						of knowledge and then control the progress.
 					</p>
-					<p>Link to <a>learning shedule</a>.</p>
+					<p>
+						Link to
+						<router-link to="/design/learningplan">learning shedule</router-link
+						>.
+					</p>
 					<p>
 						You can check a comparison of interns' knowledge before and after
 						two months at the end of this article.
