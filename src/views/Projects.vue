@@ -7,7 +7,10 @@
 				to="/dev/longdevs"
 				class="project-link-holder col-4 col-md-1"
 			>
-				<h4>Longdevs.pl</h4>
+				<div class="light">
+					<p class="h4">Longdevs</p>
+					<p class="light">for interns</p>
+				</div>
 			</router-link>
 			<router-link
 				to="/dev/gemini"
@@ -23,35 +26,44 @@
 			</router-link>
 			<div class="project-link-holder d-none d-md-flex col-md-2 row-md-2">
 				<div class="img-holder">
-					<img src="@/assets/projects/images/dazai.png" alt="" />
+					<img
+						src="@/assets/projects/images/tracy-adams-YSkuPlvE4nc-unsplash.jpg"
+						alt=""
+					/>
 				</div>
 			</div>
 			<router-link
 				to="/design/learningplan"
 				class="project-link-holder col-4 col-md-1"
 			>
-				<h4>Learning Plan</h4>
+				<div class="h4">Learning shedule</div>
 			</router-link>
 		</div>
 		<h4>/ Web desinger</h4>
 		<div class="projects-wrapper d-grid grid-col-4 grid-row-md-2">
 			<div class="project-link-holder d-none d-md-flex col-md-2 row-md-2">
 				<div class="img-holder">
-					<img src="@/assets/projects/images/dazai.png" alt="" />
+					<img
+						src="@/assets/projects/images/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg"
+						alt=""
+					/>
 				</div>
 			</div>
 			<router-link
 				to="/design/longdevs"
 				class="project-link-holder col-4 col-md-1 row-md-2"
 			>
-				<h4>LONGDEVS</h4>
+				<div class="light">
+					<p class="h4">Longdevs</p>
+					<p class="light">web desing</p>
+				</div>
 			</router-link>
 
 			<router-link
 				to="/design/inteligentlearning"
 				class="project-link-holder col-4 col-md-1 row-md-2"
 			>
-				<h4>Inteligent<br />Learning</h4>
+				<div class="h4">Inteligent<br />Learning</div>
 			</router-link>
 		</div>
 	</div>
@@ -102,9 +114,17 @@ export default {
 			justify-content: center;
 			align-items: center;
 			overflow: hidden;
+			position: relative;
 			img {
 				width: 100%;
 				height: auto;
+			}
+			.text {
+				position: absolute;
+				bottom: 20px;
+				left: 36px;
+				color: map-get($map: $colors, $key: "white");
+				text-align: left;
 			}
 		}
 	}

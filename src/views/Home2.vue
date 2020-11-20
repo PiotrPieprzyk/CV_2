@@ -30,7 +30,7 @@
 			</div>
 		</div>
 		<div class="floating-info-holder mt-8">
-			<p class="text-primary">currenty <br />looking for job</p>
+			<p class="text-primary">currently <br />looking for job</p>
 			<img :src="elipseIco" alt="" />
 		</div>
 	</div>
@@ -115,6 +115,7 @@ export default {
 		margin-left: auto;
 		p {
 			text-align: center;
+			color: #e78174;
 		}
 		> * {
 			margin-bottom: 12px;
@@ -131,7 +132,7 @@ export default {
 			padding: 36px;
 			.skills-wrapper {
 				width: 100%;
-				justify-content: start;
+				justify-content: flex-start;
 				> * {
 					margin-right: 40px;
 				}

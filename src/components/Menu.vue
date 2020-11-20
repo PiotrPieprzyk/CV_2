@@ -16,8 +16,14 @@
 			>
 		</div>
 		<div class="navigation-wrapper">
-			<a class="small">Stackoverflow</a>
-			<a class="small">LinkedIn</a>
+			<a href="https://stackoverflow.com/users/story/14174739" class="small"
+				>Stackoverflow</a
+			>
+			<a
+				href="https://www.linkedin.com/in/piotr-pieprzyk-608164185/"
+				class="small"
+				>LinkedIn</a
+			>
 		</div>
 	</div>
 </template>
