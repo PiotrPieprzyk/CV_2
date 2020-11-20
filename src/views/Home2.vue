@@ -30,7 +30,7 @@
 			</div>
 		</div>
 		<div class="floating-info-holder mt-8">
-			<p class="text-primary">currenty <br />looking for job</p>
+			<p class="text-primary">currently <br />looking for job</p>
 			<img :src="elipseIco" alt="" />
 		</div>
 	</div>
