@@ -6,11 +6,10 @@
 					About
 				</h1>
 				<p class="mr-md-8">
-					Programing became my passion since the winter of 2019. Now I'm working
-					as a Front-end developer. <br />I enjoy working with people and for
-					people. I'm open to new projects and challenges, constantly ready to
-					learn new things. Fanatic of writing reusable, easy to maintain, and
-					clean code.
+					Programing became my passion since the 2018. Now I'm working as a
+					Front-end developer. <br />I enjoy working with people and for people.
+					I'm open to new projects and challenges, constantly ready to learn new
+					things. Fanatic of writing reusable, easy to maintain, and clean code.
 				</p>
 			</div>
 			<div class="col-4 col-md-2">
