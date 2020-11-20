@@ -176,7 +176,7 @@ export default {
 		width: 100%;
 		display: flex;
 		justify-content: center;
-		align-items: start;
+		align-items: flex-start;
 		overflow: hidden;
 		position: relative;
 		.text-holder {

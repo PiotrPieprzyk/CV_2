@@ -16,7 +16,8 @@
 						<li>gain skills as an instructor</li>
 						<li>train interns in the company</li>
 					</ul>
-					<p>Link to <a>longdevs.com</a></p>
+					<!-- TO DO -->
+					<!-- <p>Link to <a>longdevs.com</a></p> -->
 				</template>
 				<template v-slot:right>right</template>
 			</content-holder>
@@ -79,13 +80,6 @@
 							always a solution.
 						</li>
 					</ul>
-					<p>
-						Link to the presentation
-						<a
-							>"Start with a simple code then add libraries - why VueX is not
-							always a solution."</a
-						>
-					</p>
 				</template>
 			</content-holder>
 
@@ -122,8 +116,11 @@
 						my CV.
 					</p>
 					<p>
-						<a href="/gemini">About page</a><br />
-						<a href="/gemini">CV</a>
+						<router-link to="/about">About page</router-link><br />
+						<a
+							href="https://drive.google.com/file/d/1ZJ48vm2Ll7nVdGI047QxrvRx-5D60dPD/view?usp=sharing"
+							>CV</a
+						>
 					</p>
 				</template>
 			</content-holder>

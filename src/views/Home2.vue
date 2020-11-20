@@ -131,7 +131,7 @@ export default {
 			padding: 36px;
 			.skills-wrapper {
 				width: 100%;
-				justify-content: start;
+				justify-content: flex-start;
 				> * {
 					margin-right: 40px;
 				}
