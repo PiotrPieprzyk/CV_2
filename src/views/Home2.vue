@@ -115,6 +115,7 @@ export default {
 		margin-left: auto;
 		p {
 			text-align: center;
+			color: #e78174;
 		}
 		> * {
 			margin-bottom: 12px;
