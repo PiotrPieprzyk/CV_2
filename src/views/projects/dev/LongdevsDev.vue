@@ -19,7 +19,12 @@
 					<!-- TO DO -->
 					<!-- <p>Link to <a>longdevs.com</a></p> -->
 				</template>
-				<template v-slot:right>right</template>
+				<template v-slot:right>
+					<img
+						src="@/assets/projects/dev/longdevs/longdevs_for_interns.jpg"
+						alt=""
+					/>
+				</template>
 			</content-holder>
 		</template>
 		<template v-slot:mainContent>
