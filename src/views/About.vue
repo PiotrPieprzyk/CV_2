@@ -14,6 +14,7 @@
 			</div>
 			<div class="col-4 col-md-2">
 				<a
+					target="_blank"
 					class="cv-holder"
 					href="https://drive.google.com/file/d/1lrrRf5A27IzZMApA9uiXGFcQrVGuohtv/view?usp=sharing"
 				>
@@ -28,7 +29,7 @@
 		<div class=" d-grid grid-col-4">
 			<div class="col-4 col-md-2">
 				<div class="card">
-					<h3 class="bold">Front-end</h3>
+					<h3 class="bold">Frontend</h3>
 					<p>Level / proficient</p>
 					<ul>
 						<li>
@@ -41,9 +42,7 @@
 							</li>
 						</ul>
 						<li>JavaScript</li>
-						<li>
-							Git
-						</li>
+
 						<li>
 							Vue
 							<ul>
@@ -71,23 +70,34 @@
 					<p>Level / basic</p>
 					<ul>
 						<li>Vue cli</li>
-
 						<li>Next.js</li>
-
 						<li>Gsap</li>
-						<li>
-							Github
-						</li>
 						<li>Netlify</li>
 					</ul>
 				</div>
 			</div>
 			<div class="col-4 col-md-2">
 				<div class="card mb-6">
-					<h3 class="bold">UI Designer</h3>
+					<h3 class="bold">Tester</h3>
+					<p>Level / good</p>
+					<ul>
+						<li>Cypress</li>
+						<li>Jest</li>
+					</ul>
+				</div>
+				<div class="card mb-6">
+					<h3 class="bold">Special skills</h3>
 					<p>Level / proficient</p>
 					<ul>
 						<li>Figma</li>
+						<li>
+							Git
+						</li>
+					</ul>
+					<p>Level / good</p>
+					<ul>
+						<li>Jira and Agile workflow</li>
+						<li>SEO</li>
 					</ul>
 					<p>Level / basic</p>
 					<ul>
@@ -95,21 +105,25 @@
 							Material Design
 						</li>
 						<li>
-							Responsive Web Desing
+							Bash
 						</li>
 					</ul>
 				</div>
 				<div class="card mb-6">
-					<h3 class="bold">Tester</h3>
-					<p>Level / good</p>
+					<h3 class="bold">Backend</h3>
+					<p>Level / basic</p>
 					<ul>
-						<li>Cypress</li>
+						<li>
+							Docker
+						</li>
+						<li>
+							PHP
+						</li>
+						<li>
+							Node.js
+						</li>
 					</ul>
 				</div>
-				<ul>
-					<li>Experience with Jira and Agile workflow</li>
-					<li>Knowledge about SEO</li>
-				</ul>
 			</div>
 		</div>
 		<h4 class="bold my-6">
@@ -127,6 +141,7 @@
 				<div class="card">
 					<h3 class="bold">Front-end</h3>
 					<ul>
+						<li>CI</li>
 						<li>Webpack</li>
 						<li>Node.js</li>
 					</ul>

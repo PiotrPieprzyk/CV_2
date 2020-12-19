@@ -4,6 +4,7 @@
 			Inteligent Learning
 		</title-holder>
 		<a
+			target="_blank"
 			class="design-project-holder"
 			href="https://www.figma.com/file/qfoH0tsbC1dxBgV6nEMQoD/Inteligent-Learning"
 		>
@@ -13,6 +14,7 @@
 			<p>
 				Link to
 				<a
+					target="_blank"
 					href="https://www.figma.com/file/qfoH0tsbC1dxBgV6nEMQoD/Inteligent-Learning"
 					>Figma</a
 				>

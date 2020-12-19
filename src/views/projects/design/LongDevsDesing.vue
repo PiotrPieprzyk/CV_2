@@ -4,6 +4,7 @@
 			Longdevs.pl
 		</title-holder>
 		<a
+			target="_blank"
 			class="design-project-holder"
 			href="https://www.figma.com/file/1HslhI3X3ZNU8MKFJL4AC2/LongDevs.pl?node-id=0%3A1"
 		>
@@ -13,6 +14,7 @@
 			<p>
 				Link to
 				<a
+					target="_blank"
 					href="https://www.figma.com/file/1HslhI3X3ZNU8MKFJL4AC2/LongDevs.pl?node-id=0%3A1"
 					>Figma</a
 				>

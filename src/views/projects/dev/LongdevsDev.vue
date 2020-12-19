@@ -16,8 +16,6 @@
 						<li>gain skills as an instructor</li>
 						<li>train interns in the company</li>
 					</ul>
-					<!-- TO DO -->
-					<!-- <p>Link to <a>longdevs.com</a></p> -->
 				</template>
 				<template v-slot:right>
 					<img
@@ -99,6 +97,48 @@
 						The internship was over. Then it was time to evaluate. The trainees
 						leave me with a few pleasent words
 					</p>
+
+					<p>
+						<i>
+							<bold
+								>I liked that you tried to introduce us to a higher level of
+								programming, and you did it.</bold
+							> </i
+						><br />
+						- Mateusz
+					</p>
+					<p>
+						<i>
+							<bold>
+								... translating the theory, you did it in an understandable way,
+								you didn't make it difficult, you even made it easier</bold
+							> </i
+						><br />
+						- Tobiasz
+					</p>
+
+					<p>
+						<a
+							target="_blank"
+							href="https://drive.google.com/file/d/1elTDW_8gHRTonMwYHART4_fE47sb1utc/view?usp=sharing"
+							>Tobiasz_Before</a
+						><br />
+						<a
+							target="_blank"
+							href="https://drive.google.com/file/d/15Y0jJRN8qgVhwVjf4y6GjCcSk4Qq0Gmy/view?usp=sharing"
+							>Tobiasz_After</a
+						><br />
+						<a
+							target="_blank"
+							href="https://drive.google.com/file/d/1Xgqx7Ec39Y8AxcKmnBsRHIJyFkwdE8bN/view?usp=sharing"
+							>Mateusz_Before</a
+						><br />
+						<a
+							target="_blank"
+							href="https://drive.google.com/file/d/1HguYt8wNRwmrrc3KNxY3YvH-xkRr4qTx/view?usp=sharing"
+							>Mateusz_After</a
+						><br />
+					</p>
 				</template>
 			</content-holder>
 		</template>
@@ -127,7 +167,8 @@
 					<p>
 						<router-link to="/about">About page</router-link><br />
 						<a
-							href="https://drive.google.com/file/d/1ZJ48vm2Ll7nVdGI047QxrvRx-5D60dPD/view?usp=sharing"
+							target="_blank"
+							href="https://drive.google.com/file/d/1lrrRf5A27IzZMApA9uiXGFcQrVGuohtv/view?usp=sharing"
 							>CV</a
 						>
 					</p>
