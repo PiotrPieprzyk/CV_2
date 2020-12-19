@@ -8,6 +8,7 @@
 						class="d-block d-md-none"
 						src="@/assets/projects/dev/gemini/gemini-project-small.png"
 						alt=""
+						style="height: 190px"
 					/>
 					<h4 class="text-center text-md-left">
 						That was the first commercial project which I participated in as a

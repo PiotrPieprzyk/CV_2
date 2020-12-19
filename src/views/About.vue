@@ -15,7 +15,7 @@
 			<div class="col-4 col-md-2">
 				<a
 					class="cv-holder"
-					href="https://drive.google.com/file/d/1ZJ48vm2Ll7nVdGI047QxrvRx-5D60dPD/view?usp=sharing"
+					href="https://drive.google.com/file/d/1lrrRf5A27IzZMApA9uiXGFcQrVGuohtv/view?usp=sharing"
 				>
 					<h3 class="text-holder bold">Download CV</h3>
 					<img :src="CvImage" alt="" />
@@ -178,14 +178,17 @@ export default {
 		align-items: flex-start;
 		overflow: hidden;
 		position: relative;
+		height: 100%;
 		.text-holder {
 			position: absolute;
 			top: 36px;
 			left: 36px;
 		}
 		img {
-			width: 100%;
-			height: auto;
+			width: auto;
+			height: 100%;
+			display: flex;
+			align-items: center;
 		}
 	}
 	.card {
