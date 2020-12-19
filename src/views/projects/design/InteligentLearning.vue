@@ -1,7 +1,7 @@
 <template>
 	<div class="project-holder">
 		<title-holder>
-			Learning plan for frontend developer
+			Inteligent Learning
 		</title-holder>
 		<a
 			class="design-project-holder"
