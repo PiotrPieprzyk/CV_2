@@ -16,7 +16,7 @@
 				<a
 					target="_blank"
 					class="cv-holder"
-					href="https://drive.google.com/file/d/1Ayf7cZv_GxCkfRObg4iRk6nIgblrg9Nm/view?usp=sharing"
+					href="https://drive.google.com/file/d/1kzfGS8ff0BMtk6dv8FlwFPdCIRPpNsVH/view?usp=sharing"
 				>
 					<h3 class="text-holder bold">Download CV</h3>
 					<img :src="CvImage" alt="" />
