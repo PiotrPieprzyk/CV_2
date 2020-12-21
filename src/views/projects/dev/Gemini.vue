@@ -3,13 +3,7 @@
 		<template v-slot:headerContent>
 			<content-holder>
 				<template v-slot:left>
-					<h1 class="bold d-none d-md-block">Gemini</h1>
-					<img
-						class="d-block d-md-none"
-						src="@/assets/projects/dev/gemini/gemini-project-small.png"
-						alt=""
-						style="height: 190px"
-					/>
+					<h1 class="bold">Gemini</h1>
 					<h4 class="text-center text-md-left">
 						That was the first commercial project which I participated in as a
 						<primary>Frontend developer</primary> working for a big company.
