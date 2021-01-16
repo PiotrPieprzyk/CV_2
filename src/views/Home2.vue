@@ -29,15 +29,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="floating-info-holder mt-8">
-			<p class="text-primary">currently <br />looking for job</p>
-			<img :src="elipseIco" alt="" />
-		</div>
 	</div>
 </template>
 
 <script>
-import myPhoto from "@/assets/home/images/Piotr_Pieprzyk_Photo.png";
+import myPhoto from "@/assets/home/images/Piotr_Pieprzyk_Photo2.png";
 import vueIco from "@/assets/home/icons/Vue.svg";
 import reactIco from "@/assets/home/icons/React.svg";
 import cypressIco from "@/assets/home/icons/Cypress.svg";
