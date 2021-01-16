@@ -77,8 +77,8 @@ export default {
 			position: relative;
 			.quato-holder {
 				position: absolute;
-				top: 35%;
-				width: 160px;
+				top: 50%;
+				width: 140px;
 				z-index: 1;
 			}
 			img {
@@ -115,6 +115,18 @@ export default {
 		}
 		> * {
 			margin-bottom: 12px;
+		}
+	}
+}
+@media (min-width: $sm) {
+	.home {
+		.card {
+			.img-holder {
+				.quato-holder {
+					top: 45%;
+					width: 160px;
+				}
+			}
 		}
 	}
 }
