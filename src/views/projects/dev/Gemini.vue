@@ -4,11 +4,11 @@
 			<content-holder>
 				<template v-slot:left>
 					<h1 class="bold">Gemini</h1>
-					<h4 class="text-center text-md-left">
+					<h4>
 						That was the first commercial project which I participated in as a
 						<primary>Frontend developer</primary> working for a big company.
 					</h4>
-					<h4 class="text-center text-md-left">
+					<h4>
 						I was working with the NXO team on maintaining the Gemini pharmacy
 						website.
 					</h4>
