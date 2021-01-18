@@ -1,35 +1,35 @@
 @use 'variables' as *;
 
 @mixin fs($break-point-name, $break-point, $typography-sizes) {
-  @each $name, $value in $typography-sizes {
-    @if $break-point {
-      @media (min-width: #{$break-point}) {
-        .text-#{$break-point-name}-#{$name} {
-          font-size: #{$value};
-        }
-      }
-    } @else {
-      .text-#{$name} {
-        font-size: #{$value};
-      }
-    }
-  }
+	@each $name, $value in $typography-sizes {
+		@if $break-point {
+			@media (min-width: #{$break-point}) {
+				.text-#{$break-point-name}-#{$name} {
+					font-size: #{$value};
+				}
+			}
+		} @else {
+			.text-#{$name} {
+				font-size: #{$value};
+			}
+		}
+	}
 }
 
 @mixin fcolor($break-point-name, $break-point, $typography-color) {
-  @each $name, $value in $typography-color {
-    @if $break-point {
-      @media (min-width: #{$break-point}) {
-        .text-#{$break-point-name}-#{$name} {
-          color: #{$value};
-        }
-      }
-    } @else {
-      .text-#{$name} {
-        color: #{$value};
-      }
-    }
-  }
+	@each $name, $value in $typography-color {
+		@if $break-point {
+			@media (min-width: #{$break-point}) {
+				.text-#{$break-point-name}-#{$name} {
+					color: #{$value};
+				}
+			}
+		} @else {
+			.text-#{$name} {
+				color: #{$value};
+			}
+		}
+	}
 }
 
 @include fs("xs", $xs, $typography);
@@ -44,43 +44,72 @@
 @include fcolor("lg", $lg, $colors);
 @include fcolor("xl", $xl, $colors);
 
-h1 {
-  font-size: map-get($typography, "h1");
-  line-height: 115%;
+h1, .h1 {
+	font-size: calc(#{map-get($typography, "h1")} * 0.8);
+	line-height: 100%;
 }
-h2 {
-  font-size: map-get($typography, "h2");
+h2, .h2 {
+	font-size: calc(#{map-get($typography, "h2")} * 0.9);
 }
-h3 {
-  font-size: map-get($typography, "h3");
+h3, .h3 {
+	font-size: calc(#{map-get($typography, "h3")} * 0.8);
 }
-h4 {
-  font-size: map-get($typography, "h4");
+h4, .h4 {
+	font-size: calc(#{map-get($typography, "h4")} * 0.9);
 }
-p {
-  font-size: map-get($typography, "p");
-  a {
-    color: map-get($map: $colors, $key: "primary");
-    font-weight: 700;
-    text-decoration: underline;
+p,.p,
+li {
+	font-size: calc(#{map-get($typography, "p")} * 0.9);
+	a {
+		color: map-get($map: $colors, $key: "primary");
+		font-weight: 700;
+		text-decoration: underline;
+	}
+}
+
+ul {
+	padding-inline-start: 36px;
+  ::marker{
+    color:  map-get($map: $colors, $key: "primary");
+    font-size: calc(#{map-get($typography, "p")} * 0.9);
   }
 }
 
+@media (min-width: $sm) {
+	h1, .h1 {
+		font-size: #{map-get($typography, "h1")};
+	}
+	h2, .h2 {
+		font-size: map-get($typography, "h2");
+	}
+	h3, .h3 {
+		font-size: map-get($typography, "h3");
+	}
+	h4, .h4 {
+		font-size: map-get($typography, "h4");
+	}
+	p, .p1,
+	li,ul > ::marker {
+		font-size: map-get($typography, "p");
+  }
+
+}
+
 primary {
-  color: map-get($map: $colors, $key: "primary");
-  font-weight: 700;
+	color: map-get($map: $colors, $key: "primary");
+	font-weight: 700;
 }
 
 body {
-  font-weight: 500;
+	font-weight: 500;
 }
 
 .bold,
 bold {
-  font-weight: 700;
+	font-weight: 700;
 }
 
 .light,
 light {
-  font-weight: 300;
+	font-weight: 300;
 }

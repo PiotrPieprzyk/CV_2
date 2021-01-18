@@ -1,5 +1,11 @@
 <template>
 	<div class="appholder">
+		<transition name="fade" mode="out-in">
+			<menu-mobile
+				v-if="menuActive"
+				@toggle-menu="menuActive = !menuActive"
+			></menu-mobile>
+		</transition>
 		<header>
 			<div class="links-wrapper ">
 				<div class="link-holder d-none d-md-flex">
@@ -15,13 +21,19 @@
 					<img :src="Triagle" alt="" />
 				</div>
 
-				<button class="d-block d-md-none">Menu</button>
+				<button class="d-block d-md-none" @click="menuActive = !menuActive">
+					Menu
+				</button>
 			</div>
 			<div>
 				<router-link to="/">Piotr Pieprzyk</router-link>
 			</div>
 		</header>
-		<router-view />
+		<router-view v-slot="{ Component }">
+			<transition name="fade" mode="out-in">
+				<component :is="Component" />
+			</transition>
+		</router-view>
 	</div>
 </template>
 
@@ -29,13 +41,18 @@
 import Circle from "../src/assets/home/icons/Cricle.svg";
 import Rectangle from "../src/assets/home/icons/Rectangle.svg";
 import Triagle from "../src/assets/home/icons/triagle.svg";
+import MenuMobile from "./components/Menu";
 export default {
 	data() {
 		return {
 			Circle,
 			Triagle,
-			Rectangle
+			Rectangle,
+			menuActive: false
 		};
+	},
+	components: {
+		MenuMobile
 	}
 };
 </script>
@@ -67,6 +84,7 @@ header {
 	justify-content: space-between;
 	font-size: 24px;
 	box-sizing: border-box;
+	z-index: 2;
 }
 
 .appholder {
@@ -81,7 +99,6 @@ header {
 
 .links-wrapper {
 	display: flex;
-	gap: 48px;
 }
 
 @media (min-width: $md) {
@@ -96,6 +113,7 @@ header {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		margin-left: 36px;
 
 		a {
 			z-index: 1;
@@ -113,5 +131,17 @@ header {
 			}
 		}
 	}
+}
+
+//  ANIMATION ROUTING
+
+.fade-enter-active,
+.fade-leave-active {
+	transition: all 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+	opacity: 0;
 }
 </style>

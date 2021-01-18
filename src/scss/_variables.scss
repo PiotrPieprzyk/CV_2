@@ -1,7 +1,7 @@
 // BreakPoint
 
 $xs: false !default;
-$sm: "567px" !default;
+$sm: "374px" !default;
 $md: "976px" !default;
 $lg: "1400px" !default;
 $xl: "1900px" !default;
@@ -22,7 +22,7 @@ $colors: (
   "primary":  #eb5656,
   "grey":  #f1f1f1,
   "white": #fcfcfc,
-  "black": rgba(0, 0, 0, 0.83),
+  "black": rgb(17, 17, 17),
 );
 
 // Margines

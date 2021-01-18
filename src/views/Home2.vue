@@ -29,15 +29,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="floating-info-holder mt-8">
-			<p class="text-primary">currenty <br />looking for job</p>
-			<img :src="elipseIco" alt="" />
-		</div>
 	</div>
 </template>
 
 <script>
-import myPhoto from "@/assets/home/images/Piotr_Pieprzyk_Photo.png";
+import myPhoto from "@/assets/home/images/Piotr_Pieprzyk_Photo2.png";
 import vueIco from "@/assets/home/icons/Vue.svg";
 import reactIco from "@/assets/home/icons/React.svg";
 import cypressIco from "@/assets/home/icons/Cypress.svg";
@@ -77,12 +73,12 @@ export default {
 	.card {
 		.img-holder {
 			width: 100%;
-			height: 400px;
+			height: 350px;
 			position: relative;
 			.quato-holder {
 				position: absolute;
-				top: 35%;
-				width: 160px;
+				top: 50%;
+				width: 140px;
 				z-index: 1;
 			}
 			img {
@@ -109,13 +105,28 @@ export default {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: 12px;
 		right: 0;
 		left: 0;
 		margin-right: auto;
 		margin-left: auto;
 		p {
 			text-align: center;
+			color: #e78174;
+		}
+		> * {
+			margin-bottom: 12px;
+		}
+	}
+}
+@media (min-width: $sm) {
+	.home {
+		.card {
+			.img-holder {
+				.quato-holder {
+					top: 45%;
+					width: 160px;
+				}
+			}
 		}
 	}
 }
@@ -129,8 +140,10 @@ export default {
 			padding: 36px;
 			.skills-wrapper {
 				width: 100%;
-				gap: 40px;
-				justify-content: start;
+				justify-content: flex-start;
+				> * {
+					margin-right: 40px;
+				}
 			}
 		}
 		.img-holder__desktop {

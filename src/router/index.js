@@ -39,14 +39,6 @@ const projects = [
 			import(
 				/* webpackChunkName: "about" */ "../views/projects/design/InteligentLearning.vue"
 			)
-	},
-	{
-		path: "/design/pagegenerator",
-		name: "PageGenerator",
-		component: () =>
-			import(
-				/* webpackChunkName: "about" */ "../views/projects/design/PageGenerator.vue"
-			)
 	}
 ];
 
@@ -80,6 +72,10 @@ const routes = [
 const router = createRouter({
 	history: createWebHistory(process.env.BASE_URL),
 	routes
+});
+
+router.afterEach(() => {
+	window.scrollTo(0, 0);
 });
 
 export default router;
