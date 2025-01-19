@@ -16,7 +16,7 @@
 				<a
 					target="_blank"
 					class="cv-holder"
-					href="https://drive.google.com/file/d/1kzfGS8ff0BMtk6dv8FlwFPdCIRPpNsVH/view?usp=sharing"
+					href="https://drive.google.com/file/d/1tnODAx9MTdGeZk8ZiA31olRFNbHY-iOC/view?usp=sharing"
 				>
 					<h3 class="text-holder bold">Download CV</h3>
 					<img :src="CvImage" alt="" />
@@ -26,154 +26,27 @@
 		<h4 class="bold mb-6 mt-8">
 			Full list of skills
 		</h4>
-		<div class=" d-grid grid-col-4">
-			<div class="col-4 col-md-2">
-				<div class="card">
-					<h3 class="bold">Frontend</h3>
-					<p>Level / proficient</p>
-					<ul>
-						<li>
-							HTML
-						</li>
-						<li>CSS</li>
-						<ul>
-							<li>
-								SCSS
-							</li>
-						</ul>
-						<li>JavaScript</li>
-
-						<li>
-							Vue
-							<ul>
-								<li>Vue2/3</li>
-								<li>VueX</li>
-								<li>VueRouter</li>
-							</ul>
-						</li>
-						<li>VSCode</li>
-						<li>Prettier</li>
-						<li>ESLint</li>
-					</ul>
-					<p>Level / good</p>
-					<ul>
-						<li>Vuetify</li>
-						<li>
-							React
-							<ul>
-								<li>Redux</li>
-								<li>Styled Components</li>
-								<li>React router</li>
-							</ul>
-						</li>
-					</ul>
-					<p>Level / basic</p>
-					<ul>
-						<li>Vue cli</li>
-						<li>Next.js</li>
-						<li>Gsap</li>
-						<li>Netlify</li>
-					</ul>
-				</div>
+		<p class="mb-6">
+			The full list of skills can be found on the
+			<a target="_blank" href="https://roadmap.sh/u/piotrpieprzyk">roadmap</a>
+			webpage.
+		</p>
+		<div class="d-grid grid-col-4">
+			<div class="col-12 roadmap-image-holder">
+				<img :src="RoadmapImage" alt="" />
 			</div>
-			<div class="col-4 col-md-2">
-				<div class="card mb-6">
-					<h3 class="bold">Tester</h3>
-					<p>Level / good</p>
-					<ul>
-						<li>Cypress</li>
-						<li>Jest</li>
-					</ul>
-				</div>
-				<div class="card mb-6">
-					<h3 class="bold">Special skills</h3>
-					<p>Level / proficient</p>
-					<ul>
-						<li>Figma</li>
-						<li>
-							Git
-						</li>
-					</ul>
-					<p>Level / good</p>
-					<ul>
-						<li>Jira and Agile workflow</li>
-						<li>SEO</li>
-					</ul>
-					<p>Level / basic</p>
-					<ul>
-						<li>
-							Material Design
-						</li>
-						<li>
-							Bash
-						</li>
-					</ul>
-				</div>
-				<div class="card mb-6">
-					<h3 class="bold">Backend</h3>
-					<p>Level / basic</p>
-					<ul>
-						<li>
-							Docker
-						</li>
-						<li>
-							PHP
-						</li>
-						<li>
-							Node.js
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<h4 class="bold my-6">
-			Learning Schedule
-		</h4>
-
-		<div class=" d-grid grid-col-4">
-			<div class="col-4 col-md-2">
-				<h4 class="bold my-6">
-					1/4 2021
-				</h4>
-				<ul class="mb-6">
-					<li>English C1</li>
-				</ul>
-				<div class="card">
-					<h3 class="bold">Front-end</h3>
-					<ul>
-						<li>CI</li>
-						<li>Webpack</li>
-						<li>Node.js</li>
-					</ul>
-				</div>
-				<h4 class="bold my-6">
-					2/4 2021
-				</h4>
-				<div class="card">
-					<h3 class="bold">Marketing</h3>
-					<ul>
-						<li>Facebook marketing</li>
-					</ul>
-				</div>
-				<div class="card mt-6">
-					<h3 class="bold">Front-end</h3>
-					<ul>
-						<li>PWA</li>
-						<li>A11Y</li>
-					</ul>
-				</div>
-			</div>
-			<div class="d-none d-md-block col-md-2"></div>
 		</div>
 	</div>
 </template>
 
 <script>
 import CvImage from "../assets/about/cv.png";
+import RoadmapImage from "../assets/about/roadmap_image.png";
 export default {
 	data() {
 		return {
-			CvImage
+			CvImage,
+			RoadmapImage
 		};
 	}
 };
@@ -202,6 +75,23 @@ export default {
 		img {
 			width: auto;
 			height: 100%;
+			display: flex;
+			align-items: center;
+		}
+	}
+	.roadmap-image-holder {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		overflow: hidden;
+		position: relative;
+		height: 600px;
+
+		img {
+			position: absolute;
+			width: 100%;
+			height: auto;
 			display: flex;
 			align-items: center;
 		}

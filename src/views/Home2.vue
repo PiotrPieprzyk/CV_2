@@ -18,10 +18,10 @@
 						websites ”
 					</h4>
 				</div>
-				<img :src="myPhoto" alt="" />
+				<img :src="myPhoto" alt="" style="aspect-ratio: 367/409" />
 			</div>
 			<div class="img-holder__desktop d-none d-md-block col-md-6">
-				<img :src="myPhoto" alt="" />
+				<img :src="myPhoto" alt="" style="aspect-ratio: 367/409"/>
 			</div>
 			<div class="skills-wrapper mt-6 mt-md-8 col-md-12">
 				<div v-for="(icon, index) in myIcons" :key="index" class="ico-holder">

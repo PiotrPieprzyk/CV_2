@@ -188,7 +188,7 @@
 					<p>
 						<router-link to="/about">About page</router-link><br />
 						<a
-							href="https://drive.google.com/file/d/1lrrRf5A27IzZMApA9uiXGFcQrVGuohtv/view?usp=sharing"
+							href="https://drive.google.com/file/d/1tnODAx9MTdGeZk8ZiA31olRFNbHY-iOC/view?usp=sharing"
 							>CV</a
 						>
 					</p>

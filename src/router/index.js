@@ -17,6 +17,12 @@ const projects = [
 			)
 	},
 	{
+		path: "/dev/een",
+		name: "EEN",
+		component: () =>
+			import(/* webpackChunkName: "about" */ "../views/projects/dev/EEN.vue")
+	},
+	{
 		path: "/design/longdevs",
 		name: "LongdevsDesign",
 		component: () =>
