@@ -219,18 +219,6 @@
 						project has been instrumental in shaping me into the developer I am
 						today.
 					</p>
-					<ul>
-						<li>Object oriented programming (OOP)</li>
-						<li>SOLID</li>
-						<li>Clean Code</li>
-						<li>Domain-Driven Design (DDD)</li>
-						<li>Test-Driven Development (TDD)</li>
-						<li>Gang of Four (GoF) Design Patterns</li>
-					</ul>
-				</template>
-			</content-holder>
-			<content-holder>
-				<template v-slot:left>
 					<p>
 						Thank you for reading
 					</p>
