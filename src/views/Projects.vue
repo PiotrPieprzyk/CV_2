@@ -8,13 +8,7 @@
 				to="/dev/een"
 				class="project-link-holder col-4 grid-el-1"
 			>
-				<div class="img-holder">
-					<img
-						src="@/assets/projects/images/een-logo.webp"
-						alt=""
-						style="width: 150px; height: 150px"
-					/>
-				</div>
+				<div class="h4">Trineo</div>
 			</router-link>
 			
 			<router-link
