@@ -5,7 +5,7 @@
 		<div class="projects-wrapper d-grid grid-col-4 grid-row-md-2">
 			
 			<router-link
-				to="/dev/een"
+				to="/dev/trineo"
 				class="project-link-holder col-4 grid-el-1"
 			>
 				<div class="h4">Trineo</div>

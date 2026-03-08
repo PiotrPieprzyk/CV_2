@@ -17,7 +17,7 @@ const projects = [
 			)
 	},
 	{
-		path: "/dev/een",
+		path: "/dev/trineo",
 		name: "Trineo",
 		component: () =>
 			import(/* webpackChunkName: "about" */ "../views/projects/dev/Trineo.vue")
