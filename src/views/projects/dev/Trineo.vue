@@ -38,7 +38,7 @@
 					</ul>
 				</template>
 				<template v-slot:right>
-					<img src="@/assets/projects/dev/een/big-een.png" alt="" />
+					<div></div>
 				</template>
 			</content-holder>
 		</template>
