@@ -3,7 +3,7 @@
 		<template v-slot:headerContent>
 			<content-holder>
 				<template v-slot:left>
-					<h1 class="bold">EEN Project</h1>
+					<h1 class="bold">Trineo Project</h1>
 					<h4>
 						This is a project I participated in as a Lead frontend developer at
 						Trineo.
@@ -38,7 +38,7 @@
 					</ul>
 				</template>
 				<template v-slot:right>
-					<img src="@/assets/projects/dev/een/big-een.png" alt="" />
+					<div></div>
 				</template>
 			</content-holder>
 		</template>
@@ -208,7 +208,7 @@
 						OVERVIEW
 					</h4>
 					<p>
-						Reflecting on my time working on the Eagle Eye Networks project, I
+						Reflecting on my time working on the Trineo project, I
 						am incredibly grateful for the opportunity to contribute to such a
 						complex and challenging endeavor. The experience has not only
 						allowed me to hone my technical skills but has also fostered my

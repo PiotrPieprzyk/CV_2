@@ -17,10 +17,10 @@ const projects = [
 			)
 	},
 	{
-		path: "/dev/een",
-		name: "EEN",
+		path: "/dev/trineo",
+		name: "Trineo",
 		component: () =>
-			import(/* webpackChunkName: "about" */ "../views/projects/dev/EEN.vue")
+			import(/* webpackChunkName: "about" */ "../views/projects/dev/Trineo.vue")
 	},
 	{
 		path: "/design/longdevs",
