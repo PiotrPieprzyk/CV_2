@@ -6,10 +6,13 @@
 				n: Piotr Pieprzyk
 			</p>
 			<p>e: piotr.pieprzyk.pp@gmail.com</p>
-			<p>t: +48 886 169 843</p>
 			<div class="links-holder">
 				<p>links:</p>
-				<a href="https://www.linkedin.com/in/piotr-pieprzyk-608164185/">
+				<a
+					href="https://www.linkedin.com/in/piotr-pieprzyk"
+					target="_blank"
+					rel="noopener"
+				>
 					<img
 						src="@/assets/contact/linked_in.svg"
 						alt="LinkedIn"
@@ -17,7 +20,23 @@
 						height="30"
 					/>
 				</a>
-				<a href="https://stackoverflow.com/users/story/14174739">
+				<a
+					href="https://github.com/PiotrPieprzyk"
+					target="_blank"
+					rel="noopener"
+				>
+					<img
+						src="@/assets/contact/github.svg"
+						alt="GitHub"
+						width="26"
+						height="26"
+					/>
+				</a>
+				<a
+					href="https://stackoverflow.com/users/story/14174739"
+					target="_blank"
+					rel="noopener"
+				>
 					<img
 						src="@/assets/contact/stackoverflow.svg"
 						alt="Stack Overflow"

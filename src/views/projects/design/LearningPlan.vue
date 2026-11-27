@@ -9,7 +9,7 @@
 			href="https://www.figma.com/file/i4uXdFGzAzP36moOjVqRbp/PLAN?node-id=0%3A1"
 		>
 			<img
-				src="@/assets/projects/design/LearningPlan.jpg"
+				src="@/assets/projects/design/LearningPlan.webp"
 				alt="Learning plan design"
 				width="994"
 				height="3951"

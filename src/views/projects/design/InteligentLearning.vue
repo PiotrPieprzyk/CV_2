@@ -9,7 +9,7 @@
 			href="https://www.figma.com/file/qfoH0tsbC1dxBgV6nEMQoD/Inteligent-Learning"
 		>
 			<img
-				src="@/assets/projects/design/InteligentLearning.jpg"
+				src="@/assets/projects/design/InteligentLearning.webp"
 				alt="Inteligent Learning design"
 				width="1120"
 				height="2658"

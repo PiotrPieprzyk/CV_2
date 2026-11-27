@@ -16,12 +16,11 @@
 			>
 		</div>
 		<div class="navigation-wrapper">
+			<a href="https://github.com/PiotrPieprzyk" class="small">GitHub</a>
 			<a href="https://stackoverflow.com/users/story/14174739" class="small"
 				>Stackoverflow</a
 			>
-			<a
-				href="https://www.linkedin.com/in/piotr-pieprzyk-608164185/"
-				class="small"
+			<a href="https://www.linkedin.com/in/piotr-pieprzyk" class="small"
 				>LinkedIn</a
 			>
 		</div>

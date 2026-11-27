@@ -16,13 +16,9 @@
 				</p>
 			</div>
 			<div class="col-4 col-md-2">
-				<a
-					target="_blank"
-					class="cv-holder"
-					href="https://drive.google.com/file/d/1tnODAx9MTdGeZk8ZiA31olRFNbHY-iOC/view?usp=sharing"
-				>
+				<a target="_blank" class="cv-holder" href="/Piotr-Pieprzyk-CV.pdf">
 					<h3 class="text-holder bold">Download CV</h3>
-					<img :src="CvImage" alt="CV preview" width="536" height="268" />
+					<img :src="CvImage" alt="CV preview" width="1072" height="536" />
 				</a>
 			</div>
 		</div>
@@ -48,8 +44,8 @@
 </template>
 
 <script>
-import CvImage from "../assets/about/cv.png";
-import RoadmapImage from "../assets/about/roadmap_image.png";
+import CvImage from "../assets/about/cv.webp";
+import RoadmapImage from "../assets/about/roadmap_image.webp";
 export default {
 	data() {
 		return {

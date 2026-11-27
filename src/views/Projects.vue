@@ -27,7 +27,7 @@
 			<router-link to="/dev/gemini" class="project-link-holder col-4 grid-el-2">
 				<div class="img-holder">
 					<img
-						src="@/assets/projects/images/Gemini-logo.jpg"
+						src="@/assets/projects/images/Gemini-logo.webp"
 						alt="Gemini"
 						width="150"
 						height="150"
@@ -39,10 +39,10 @@
 			<div class="project-link-holder d-none d-md-flex col-4 grid-el-5">
 				<div class="img-holder">
 					<img
-						src="@/assets/projects/images/tracy-adams-YSkuPlvE4nc-unsplash.jpg"
+						src="@/assets/projects/images/tracy-adams-YSkuPlvE4nc-unsplash.webp"
 						alt=""
-						width="1163"
-						height="1157"
+						width="1100"
+						height="1094"
 					/>
 				</div>
 			</div>
@@ -69,10 +69,10 @@
 			<div class="project-link-holder d-none d-md-flex col-md-2 row-md-2">
 				<div class="img-holder">
 					<img
-						src="@/assets/projects/images/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg"
+						src="@/assets/projects/images/glenn-carstens-peters-P1qyEf1g0HU-unsplash.webp"
 						alt=""
-						width="1639"
-						height="1567"
+						width="1100"
+						height="1052"
 					/>
 				</div>
 			</div>

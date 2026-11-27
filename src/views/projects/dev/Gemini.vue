@@ -35,7 +35,7 @@
 				</template>
 				<template v-slot:right>
 					<img
-						src="@/assets/projects/dev/gemini/big-apteka-gemini.png"
+						src="@/assets/projects/dev/gemini/big-apteka-gemini.webp"
 						alt="Apteka Gemini website"
 						width="450"
 						height="589"
@@ -91,7 +91,7 @@
 						PLANING
 					</h4>
 					<img
-						src="@/assets/projects/dev/gemini/detailed_plan.png"
+						src="@/assets/projects/dev/gemini/detailed_plan.webp"
 						alt="Detailed plan"
 						width="828"
 						height="682"
@@ -116,7 +116,7 @@
 						COMPONENTS
 					</h4>
 					<img
-						src="@/assets/projects/dev/gemini/Components.png"
+						src="@/assets/projects/dev/gemini/Components.webp"
 						alt="Components"
 						width="826"
 						height="756"
@@ -200,7 +200,7 @@
 					<p>
 						<router-link to="/about">About page</router-link><br />
 						<a
-							href="https://drive.google.com/file/d/1tnODAx9MTdGeZk8ZiA31olRFNbHY-iOC/view?usp=sharing"
+							href="/Piotr-Pieprzyk-CV.pdf"
 							>CV</a
 						>
 					</p>
