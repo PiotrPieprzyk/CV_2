@@ -2,8 +2,8 @@
 	<div class="home">
 		<div class="card d-md-grid grid-col-md-12">
 			<div class="title-holder col-md-6">
-				<h1 class="bold">Frontend <br />Developer</h1>
-				<h4>/ Web Designer</h4>
+				<h1 class="bold">Fullstack <br />Developer</h1>
+				<h4>/ Senior FE Engineer</h4>
 				<h4 class="d-none d-md-block mt-md-8">
 					“ ... who <span class="text-primary bold">loves</span> great<br />
 					looking, and optimized<br />
@@ -18,14 +18,19 @@
 						websites ”
 					</h4>
 				</div>
-				<img :src="myPhoto" alt="" style="aspect-ratio: 367/409" />
+				<img :src="myPhoto" alt="Piotr Pieprzyk" width="367" height="409" />
 			</div>
 			<div class="img-holder__desktop d-none d-md-block col-md-6">
-				<img :src="myPhoto" alt="" style="aspect-ratio: 367/409"/>
+				<img :src="myPhoto" alt="Piotr Pieprzyk" width="367" height="409" />
 			</div>
 			<div class="skills-wrapper mt-6 mt-md-8 col-md-12">
 				<div v-for="(icon, index) in myIcons" :key="index" class="ico-holder">
-					<img :src="icon" alt="" />
+					<img
+						:src="icon.src"
+						:alt="icon.alt"
+						:width="icon.w"
+						:height="icon.h"
+					/>
 				</div>
 			</div>
 		</div>
@@ -33,31 +38,31 @@
 </template>
 
 <script>
-import myPhoto from "@/assets/home/images/Piotr_Pieprzyk_Photo2.png";
+import myPhoto from "@/assets/home/images/Piotr_Pieprzyk_Photo2.webp";
 import vueIco from "@/assets/home/icons/Vue.svg";
 import reactIco from "@/assets/home/icons/React.svg";
-import cypressIco from "@/assets/home/icons/Cypress.svg";
-import TypescriptIco from "@/assets/home/icons/Typescript.svg";
-import webpacktIco from "@/assets/home/icons/Webpack.svg";
-import figmaIco from "@/assets/home/icons/Figma.svg";
-import materialDesingIco from "@/assets/home/icons/Material_Desing.svg";
+import nextIco from "@/assets/home/icons/Nextjs.svg";
+import typescriptIco from "@/assets/home/icons/Typescript.svg";
 import slashIco from "@/assets/home/icons/slash.svg";
-import elipseIco from "@/assets/home/icons/Ellipse.svg";
+import nodeIco from "@/assets/home/icons/Nodejs.svg";
+import postgresIco from "@/assets/home/icons/Postgresql.svg";
+import awsIco from "@/assets/home/icons/Aws.svg";
+import terraformIco from "@/assets/home/icons/Terraform.svg";
 
 export default {
 	data() {
 		return {
 			myIcons: [
-				vueIco,
-				reactIco,
-				cypressIco,
-				TypescriptIco,
-				webpacktIco,
-				slashIco,
-				figmaIco,
-				materialDesingIco
+				{ src: vueIco, alt: "Vue", w: 27, h: 24 },
+				{ src: reactIco, alt: "React", w: 23, h: 24 },
+				{ src: nextIco, alt: "Next.js", w: 24, h: 24 },
+				{ src: typescriptIco, alt: "TypeScript", w: 25, h: 24 },
+				{ src: slashIco, alt: "", w: 10, h: 28 },
+				{ src: nodeIco, alt: "Node.js", w: 24, h: 24 },
+				{ src: postgresIco, alt: "PostgreSQL", w: 24, h: 24 },
+				{ src: awsIco, alt: "AWS", w: 38, h: 24 },
+				{ src: terraformIco, alt: "Terraform", w: 24, h: 24 }
 			],
-			elipseIco,
 			myPhoto
 		};
 	}
@@ -148,7 +153,10 @@ export default {
 		}
 		.img-holder__desktop {
 			img {
-				width: 100%;
+				// explicit width so the card (a flex item sized by content)
+				// is as wide before the photo loads as after
+				width: 367px;
+				max-width: 100%;
 				margin-top: -100px;
 			}
 		}

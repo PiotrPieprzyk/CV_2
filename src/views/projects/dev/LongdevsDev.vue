@@ -19,8 +19,10 @@
 				</template>
 				<template v-slot:right>
 					<img
-						src="@/assets/projects/dev/longdevs/longdevs_for_interns.jpg"
-						alt=""
+						src="@/assets/projects/dev/longdevs/longdevs_for_interns.webp"
+						alt="Longdevs for interns"
+						width="450"
+						height="562"
 					/>
 				</template>
 			</content-holder>
@@ -168,7 +170,7 @@
 						<router-link to="/about">About page</router-link><br />
 						<a
 							target="_blank"
-							href="https://drive.google.com/file/d/1tnODAx9MTdGeZk8ZiA31olRFNbHY-iOC/view?usp=sharing"
+							href="/Piotr-Pieprzyk-CV.pdf"
 							>CV</a
 						>
 					</p>

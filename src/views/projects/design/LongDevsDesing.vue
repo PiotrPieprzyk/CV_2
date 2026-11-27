@@ -8,7 +8,12 @@
 			class="design-project-holder"
 			href="https://www.figma.com/file/1HslhI3X3ZNU8MKFJL4AC2/LongDevs.pl?node-id=0%3A1"
 		>
-			<img src="@/assets/projects/design/longdevs.jpg" alt="" />
+			<img
+				src="@/assets/projects/design/longdevs.webp"
+				alt="Longdevs web design"
+				width="1120"
+				height="2178"
+			/>
 		</a>
 		<div class="link-holder">
 			<p>

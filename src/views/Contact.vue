@@ -6,14 +6,43 @@
 				n: Piotr Pieprzyk
 			</p>
 			<p>e: piotr.pieprzyk.pp@gmail.com</p>
-			<p>t: +48 886 169 843</p>
 			<div class="links-holder">
 				<p>links:</p>
-				<a href="https://www.linkedin.com/in/piotr-pieprzyk-608164185/">
-					<img src="@/assets/contact/linked_in.svg" alt="" style="aspect-ratio: 1/1; width: 30px" />
+				<a
+					href="https://www.linkedin.com/in/piotr-pieprzyk"
+					target="_blank"
+					rel="noopener"
+				>
+					<img
+						src="@/assets/contact/linked_in.svg"
+						alt="LinkedIn"
+						width="30"
+						height="30"
+					/>
 				</a>
-				<a href="https://stackoverflow.com/users/story/14174739">
-					<img src="@/assets/contact/stackoverflow.svg" alt="" style="aspect-ratio: 7/8; width: 21px" />
+				<a
+					href="https://github.com/PiotrPieprzyk"
+					target="_blank"
+					rel="noopener"
+				>
+					<img
+						src="@/assets/contact/github.svg"
+						alt="GitHub"
+						width="26"
+						height="26"
+					/>
+				</a>
+				<a
+					href="https://stackoverflow.com/users/story/14174739"
+					target="_blank"
+					rel="noopener"
+				>
+					<img
+						src="@/assets/contact/stackoverflow.svg"
+						alt="Stack Overflow"
+						width="21"
+						height="24"
+					/>
 				</a>
 			</div>
 			<img
@@ -21,6 +50,8 @@
 				class="paper-plane d-none d-md-block"
 				src="@/assets/contact/paper_plane.svg"
 				alt=""
+				width="80"
+				height="45"
 			/>
 		</div>
 	</div>

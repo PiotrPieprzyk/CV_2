@@ -10,15 +10,15 @@
 			<div class="links-wrapper ">
 				<div class="link-holder d-none d-md-flex">
 					<router-link to="/projects">Projects</router-link>
-					<img :src="Circle" alt="" />
+					<img :src="Circle" alt="" width="53" height="53" />
 				</div>
 				<div class="link-holder d-none d-md-flex">
 					<router-link to="/about">About</router-link>
-					<img :src="Rectangle" alt="" />
+					<img :src="Rectangle" alt="" width="53" height="53" />
 				</div>
 				<div class="link-holder d-none d-md-flex">
 					<router-link to="/contact">Contact</router-link>
-					<img :src="Triagle" alt="" />
+					<img :src="Triagle" alt="" width="62" height="53" />
 				</div>
 
 				<button class="d-block d-md-none" @click="menuActive = !menuActive">

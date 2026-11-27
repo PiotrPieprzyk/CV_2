@@ -4,7 +4,7 @@
 			<div v-if="isMobile && isFloatingInfoVisibile" class="floating-info">
 				<div class="img-holder-outer">
 					<div ref="imgHolderInner" class="img-holder-inner">
-						<img :src="Circle" alt="" />
+						<img :src="Circle" alt="" width="53" height="53" />
 					</div>
 				</div>
 				<transition name="slide">
@@ -204,6 +204,7 @@ export default {
 	width: 100%;
 	img {
 		width: 100%;
+		height: auto;
 	}
 }
 
