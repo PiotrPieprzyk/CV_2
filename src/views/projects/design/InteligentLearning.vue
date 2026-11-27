@@ -8,7 +8,12 @@
 			class="design-project-holder"
 			href="https://www.figma.com/file/qfoH0tsbC1dxBgV6nEMQoD/Inteligent-Learning"
 		>
-			<img src="@/assets/projects/design/InteligentLearning.jpg" alt="" />
+			<img
+				src="@/assets/projects/design/InteligentLearning.jpg"
+				alt="Inteligent Learning design"
+				width="1120"
+				height="2658"
+			/>
 		</a>
 		<div class="link-holder">
 			<p>

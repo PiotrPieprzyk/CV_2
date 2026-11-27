@@ -36,7 +36,9 @@
 				<template v-slot:right>
 					<img
 						src="@/assets/projects/dev/gemini/big-apteka-gemini.png"
-						alt=""
+						alt="Apteka Gemini website"
+						width="450"
+						height="589"
 					/>
 				</template>
 			</content-holder>
@@ -88,7 +90,12 @@
 					<h4 class="bold">
 						PLANING
 					</h4>
-					<img src="@/assets/projects/dev/gemini/detailed_plan.png" alt="" />
+					<img
+						src="@/assets/projects/dev/gemini/detailed_plan.png"
+						alt="Detailed plan"
+						width="828"
+						height="682"
+					/>
 					<p>
 						This is one of my favorite activities. It allows me to know
 						<primary>exactly what to do</primary>. The list of tasks turned out
@@ -108,7 +115,12 @@
 					<h4 class="bold">
 						COMPONENTS
 					</h4>
-					<img src="@/assets/projects/dev/gemini/Components.png" alt="" />
+					<img
+						src="@/assets/projects/dev/gemini/Components.png"
+						alt="Components"
+						width="826"
+						height="756"
+					/>
 					<p>
 						Another useful skill is writing reusable code. After creating a few
 						components, I was producing pages faster. Writing time was often

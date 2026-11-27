@@ -30,4 +30,10 @@ li {
   font-size: inherit;
 }
 
+// width/height attributes on <img> reserve space (aspect ratio) before load;
+// height: auto keeps that ratio when CSS sets only the width.
+img {
+  height: auto;
+}
+
 

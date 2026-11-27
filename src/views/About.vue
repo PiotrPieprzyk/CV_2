@@ -6,10 +6,13 @@
 					About
 				</h1>
 				<p class="mr-md-8">
-					Programing became my passion since the 2018. Now I'm working as a
-					Front-end developer. <br />I enjoy working with people and for people.
-					I'm open to new projects and challenges, constantly ready to learn new
-					things. Fanatic of writing reusable, easy to maintain, and clean code.
+					Programing became my passion since the 2018. I'm a fullstack
+					developer: years of commercial Vue and TypeScript work, including
+					leading a frontend team, plus Node.js, databases and AWS
+					infrastructure built end to end in my own projects. <br />I enjoy
+					working with people and for people. I'm open to new projects and
+					challenges, constantly ready to learn new things. Fanatic of writing
+					reusable, easy to maintain, and clean code.
 				</p>
 			</div>
 			<div class="col-4 col-md-2">
@@ -19,7 +22,7 @@
 					href="https://drive.google.com/file/d/1tnODAx9MTdGeZk8ZiA31olRFNbHY-iOC/view?usp=sharing"
 				>
 					<h3 class="text-holder bold">Download CV</h3>
-					<img :src="CvImage" alt="" />
+					<img :src="CvImage" alt="CV preview" width="536" height="268" />
 				</a>
 			</div>
 		</div>
@@ -33,7 +36,12 @@
 		</p>
 		<div class="d-grid grid-col-4">
 			<div class="col-12 roadmap-image-holder">
-				<img :src="RoadmapImage" alt="" />
+				<img
+					:src="RoadmapImage"
+					alt="roadmap.sh skills overview"
+					width="665"
+					height="520"
+				/>
 			</div>
 		</div>
 	</div>
@@ -73,8 +81,8 @@ export default {
 			left: 36px;
 		}
 		img {
-			width: auto;
-			height: 100%;
+			width: 100%;
+			height: auto;
 			display: flex;
 			align-items: center;
 		}

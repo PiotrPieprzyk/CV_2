@@ -2,7 +2,7 @@
 	<div class="home">
 		<div class="card d-md-grid grid-col-md-12">
 			<div class="title-holder col-md-6">
-				<h1 class="bold">Frontend <br />Developer</h1>
+				<h1 class="bold">Fullstack <br />Developer</h1>
 				<h4>/ Web Designer</h4>
 				<h4 class="d-none d-md-block mt-md-8">
 					“ ... who <span class="text-primary bold">loves</span> great<br />
@@ -18,14 +18,19 @@
 						websites ”
 					</h4>
 				</div>
-				<img :src="myPhoto" alt="" style="aspect-ratio: 367/409" />
+				<img :src="myPhoto" alt="Piotr Pieprzyk" width="367" height="409" />
 			</div>
 			<div class="img-holder__desktop d-none d-md-block col-md-6">
-				<img :src="myPhoto" alt="" style="aspect-ratio: 367/409"/>
+				<img :src="myPhoto" alt="Piotr Pieprzyk" width="367" height="409" />
 			</div>
 			<div class="skills-wrapper mt-6 mt-md-8 col-md-12">
 				<div v-for="(icon, index) in myIcons" :key="index" class="ico-holder">
-					<img :src="icon" alt="" />
+					<img
+						:src="icon.src"
+						:alt="icon.alt"
+						:width="icon.w"
+						:height="icon.h"
+					/>
 				</div>
 			</div>
 		</div>
@@ -48,14 +53,14 @@ export default {
 	data() {
 		return {
 			myIcons: [
-				vueIco,
-				reactIco,
-				cypressIco,
-				TypescriptIco,
-				webpacktIco,
-				slashIco,
-				figmaIco,
-				materialDesingIco
+				{ src: vueIco, alt: "Vue", w: 27, h: 24 },
+				{ src: reactIco, alt: "React", w: 23, h: 24 },
+				{ src: cypressIco, alt: "Cypress", w: 25, h: 24 },
+				{ src: TypescriptIco, alt: "TypeScript", w: 25, h: 24 },
+				{ src: webpacktIco, alt: "Webpack", w: 22, h: 24 },
+				{ src: slashIco, alt: "", w: 10, h: 28 },
+				{ src: figmaIco, alt: "Figma", w: 25, h: 24 },
+				{ src: materialDesingIco, alt: "Material Design", w: 25, h: 24 }
 			],
 			elipseIco,
 			myPhoto
@@ -148,7 +153,10 @@ export default {
 		}
 		.img-holder__desktop {
 			img {
-				width: 100%;
+				// explicit width so the card (a flex item sized by content)
+				// is as wide before the photo loads as after
+				width: 367px;
+				max-width: 100%;
 				margin-top: -100px;
 			}
 		}

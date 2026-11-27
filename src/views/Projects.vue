@@ -1,25 +1,37 @@
 <template>
 	<div class="projects">
 		<h1 class="bold">Projects</h1>
-		<h4 class="mt-2">/ Frontend developer</h4>
-		<div class="projects-wrapper d-grid grid-col-4 grid-row-md-2">
-			
+		<h4 class="mt-2">/ Fullstack developer</h4>
+		<div class="cases-wrapper">
 			<router-link
-				to="/dev/trineo"
-				class="project-link-holder col-4 grid-el-1"
+				v-for="item in cases"
+				:key="item.slug"
+				:to="`/cases/${item.slug}`"
+				class="project-link-holder"
 			>
+				<div>
+					<p class="h4">{{ item.title }}</p>
+					<p class="light">{{ item.subtitle }}</p>
+					<p class="case-status" :class="{ ready: item.caseUrl }">
+						{{ item.caseUrl ? "case study →" : "case study soon" }}
+					</p>
+				</div>
+			</router-link>
+		</div>
+		<h4>/ Frontend developer</h4>
+		<div class="projects-wrapper d-grid grid-col-4 grid-row-md-2">
+			<router-link to="/dev/trineo" class="project-link-holder col-4 grid-el-1">
 				<div class="h4">Trineo</div>
 			</router-link>
-			
-			<router-link
-				to="/dev/gemini"
-				class="project-link-holder col-4 grid-el-2"
-			>
+
+			<router-link to="/dev/gemini" class="project-link-holder col-4 grid-el-2">
 				<div class="img-holder">
 					<img
 						src="@/assets/projects/images/Gemini-logo.jpg"
-						alt=""
-						style="width: 150px; height: 150px"
+						alt="Gemini"
+						width="150"
+						height="150"
+						style="object-fit: contain"
 					/>
 				</div>
 			</router-link>
@@ -29,10 +41,12 @@
 					<img
 						src="@/assets/projects/images/tracy-adams-YSkuPlvE4nc-unsplash.jpg"
 						alt=""
+						width="1163"
+						height="1157"
 					/>
 				</div>
 			</div>
-			
+
 			<router-link
 				to="/dev/longdevs"
 				class="project-link-holder col-4 grid-el-3"
@@ -49,9 +63,6 @@
 			>
 				<div class="h4">Learning shedule</div>
 			</router-link>
-
-			
-			
 		</div>
 		<h4>/ Web desinger</h4>
 		<div class="projects-wrapper d-grid grid-col-4 grid-row-md-2">
@@ -60,6 +71,8 @@
 					<img
 						src="@/assets/projects/images/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg"
 						alt=""
+						width="1639"
+						height="1567"
 					/>
 				</div>
 			</div>
@@ -84,9 +97,11 @@
 </template>
 
 <script>
+import cases from "@/data/cases.js";
+
 export default {
-	mounted() {
-		console.log("projects");
+	data() {
+		return { cases };
 	}
 };
 </script>
@@ -94,13 +109,38 @@ export default {
 <style lang="scss" scope>
 @use '../scss/variables' as *;
 
-
-
 .projects {
 	width: 100%;
 	max-width: 410px;
 	display: flex;
 	flex-direction: column;
+	.cases-wrapper {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 36px;
+		margin: 60px 0;
+		.case-status {
+			margin-top: 12px;
+			font-size: 16px;
+			font-style: italic;
+			&.ready {
+				color: map-get($map: $colors, $key: "primary");
+				font-weight: 700;
+				font-style: normal;
+			}
+		}
+	}
+	.cases-wrapper .project-link-holder,
+	.projects-wrapper .project-link-holder {
+		width: 100%;
+		min-height: 200px;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: map-get($map: $colors, $key: "white");
+	}
 	.projects-wrapper {
 		width: 100%;
 		grid-gap: 36px;
@@ -121,6 +161,9 @@ export default {
 }
 
 @media (min-width: $md) {
+	.projects .cases-wrapper {
+		grid-template-columns: repeat(3, 1fr);
+	}
 	.grid-el-1 {
 		grid-column: 1;
 		grid-row: 1;
@@ -150,7 +193,7 @@ export default {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 	}
-	
+
 	.projects {
 		max-width: 1100px;
 		.img-holder {

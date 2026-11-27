@@ -20,7 +20,9 @@
 				<template v-slot:right>
 					<img
 						src="@/assets/projects/dev/longdevs/longdevs_for_interns.jpg"
-						alt=""
+						alt="Longdevs for interns"
+						width="450"
+						height="562"
 					/>
 				</template>
 			</content-holder>

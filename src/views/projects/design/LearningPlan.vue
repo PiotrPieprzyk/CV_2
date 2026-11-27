@@ -8,7 +8,12 @@
 			class="design-project-holder"
 			href="https://www.figma.com/file/i4uXdFGzAzP36moOjVqRbp/PLAN?node-id=0%3A1"
 		>
-			<img src="@/assets/projects/design/LearningPlan.jpg" alt="" />
+			<img
+				src="@/assets/projects/design/LearningPlan.jpg"
+				alt="Learning plan design"
+				width="994"
+				height="3951"
+			/>
 		</a>
 		<div class="link-holder">
 			<p>
